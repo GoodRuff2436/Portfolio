@@ -1,0 +1,95 @@
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    line-height: 1.8;
+    color: #2d3436;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f0f2f5; /* 少し落ち着いたグレー */
+}
+
+header {
+    background: linear-gradient(135deg, #1e3799, #0984e3);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    opacity: 0.9;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* 各セクションのカードデザイン */
+section {
+    background: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease; /* ホバー時に動く演出 */
+}
+
+section:hover {
+    transform: translateY(-5px); /* 少し浮き上がる */
+}
+
+h2 {
+    color: #0984e3;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #dfe6e9;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+h2::before {
+    content: "🐾"; /* 犬の足跡アイコンをさりげなく */
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #0984e3; /* 左側にアクセントカラー */
+}
+
+li strong {
+    color: #2d3436;
+    font-size: 1.1rem;
+}
+
+a {
+    color: white;
+    background-color: #0984e3;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(9, 132, 227, 0.2);
+}
+
+a:hover {
+    background-color: #74b9ff;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #636e72;
+}
