@@ -28,14 +28,33 @@ header h1 {
     letter-spacing: 2px;
 }
 
-/* 各セクションのカードデザイン */
+/* 各セクション */
 section {
-    background: white;
+    /* 背景を白の半透明に */
+    background: rgba(255, 255, 255, 0.4); 
+    
+    /* 背後をぼかす */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* 枠線（ほんのり緑を混ぜるとヘッダーと馴染みます） */
+    border: 1px solid rgba(46, 204, 113, 0.2);
+    border-radius: 12px;
+    
     padding: 30px;
     margin-top: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+    
+    /* 影を柔らかく */
+    box-shadow: 0 8px 32px 0 rgba(39, 174, 96, 0.1);
+    
+    transition: transform 0.3s ease, background 0.3s ease;
+    color: #2d3436; /* 文字色を濃いグレーにして読みやすく */
+}
+
+/* ホバー時の演出もグラス感をアップ */
+section:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.5); /* 少し明るく */
 }
 
 section:hover {
@@ -57,25 +76,6 @@ h2::before {
     content: "🐾";
     margin-right: 10px;
     font-size: 1.2rem;
-}
-
-.glass-card {
-    /* 背景の白を少し濃く（0.4）して、ボヤけ具合を調整 */
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    
-    padding: 20px;
-    /* ★文字色を白から濃いグレーに変更して、他と合わせる */
-    color: #2d3436; 
-    
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    
-    /* 1つ上のsectionと同じように、上に余白を作る */
-    margin-top: 30px; 
 }
 
 /* リストアイテム：左の線を緑に */
