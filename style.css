@@ -1,12 +1,15 @@
-/* 全体のリセットと背景 */
 body {
+
     font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
     line-height: 1.8;
     color: #2d3436;
+    
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
-    background-color: #f7f9f7; /* ほんのり緑がかったグレー */
+    
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%) no-repeat fixed;
+    min-height: 100vh;
 }
 
 /* ヘッダー：新緑のようなグラデーション */
@@ -54,6 +57,25 @@ h2::before {
     content: "🐾";
     margin-right: 10px;
     font-size: 1.2rem;
+}
+
+.glass-card {
+    /* 背景を少し透かす */
+    background: rgba(255, 255, 255, 0.15);
+    /* 背後をぼかす（重要！） */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Safari用 */
+    
+    /* 枠線と角丸 */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    /* 中の余白と文字色 */
+    padding: 20px;
+    color: #fff;
+    
+    /* 軽い影をつけて浮かせる */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* リストアイテム：左の線を緑に */
