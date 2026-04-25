@@ -87,7 +87,7 @@ li {
     border-left: 4px solid #2ecc71;
 }
 
-/* リンクボタン：安心感のある緑 */
+/* リンクボタン */
 a {
     color: white;
     background-color: #27ae60;
@@ -102,6 +102,13 @@ a {
 a:hover {
     background-color: #2ecc71;
     transform: scale(1.05);
+}
+
+.button-group {
+    display: flex;       /* 横並びにする */
+    gap: 15px;          /* ボタン同士の間隔 */
+    flex-wrap: wrap;    /* 画面が狭くなったら自動で折り返す */
+    margin-top: 15px;
 }
 
 /* フッター */
