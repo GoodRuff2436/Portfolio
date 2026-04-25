@@ -8,8 +8,13 @@ body {
     margin: 0 auto;
     padding: 40px 20px;
    
-    background-image: url('images/bg-monstera.jpg'); 
-    min-height: 100vh;
+    background-image: url('images/bg-monstera.png'); 
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 }
 
 /* ヘッダー：新緑のようなグラデーション */
