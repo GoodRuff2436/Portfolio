@@ -99,11 +99,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: #2ecc71;
-    transform: scale(1.05);
-}
-
 .button-group {
     display: flex;       /* 横並びにする */
     gap: 15px;          /* ボタン同士の間隔 */
