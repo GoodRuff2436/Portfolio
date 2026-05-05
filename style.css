@@ -28,9 +28,10 @@ header {
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #ffffff, #d4f5e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* 各セクション */
